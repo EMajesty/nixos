@@ -3,7 +3,7 @@
 {
 	programs.zsh = {
 		enable = true;
-		enableCompetion = true;
+		enableCompletion = true;
 		autosuggestion.enable = true;
 		syntaxHighlighting.enable = true;
 		shellAliases = {

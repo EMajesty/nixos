@@ -3,7 +3,7 @@
 {
 	programs.waybar = {
 		enable = true;
-		style = ./waybar.css;
+		# style = ./waybar.css;
 		settings = [
 			{
 				reload_style_on_change = true;
