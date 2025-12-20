@@ -25,10 +25,10 @@
 				gaps_in = 5;
 				gaps_out = 10;
 				border_size = 4;
-				col = {
-					active_border = "rgba(fa6161ee)";
-					inactive_border = "rgba(333333aa)";
-				};
+				# col = {
+				# 	active_border = "rgba(fa6161ee)";
+				# 	inactive_border = "rgba(333333aa)";
+				# };
 				resize_on_border = false;
 				allow_tearing = false;
 				layout = "dwindle";
@@ -107,7 +107,7 @@
 				"$mod SHIFT, S, exec, hyprshot -m window --clipboard-only"
 				"$mod CONTROL, S, exec, hyprshot -m region --clipboard-only"
 				"$mod, P, exec, hyprpicker -a"
-				"$mod SHIFT, L, exec $home/.emaj/lock_screen.sh"
+				# "$mod SHIFT, L, exec $home/.emaj/lock_screen.sh"
 				"$mod, H, movefocus, l"
 				"$mod, L, movefocus, r"
 				"$mod, K, movefocus, u"

@@ -43,6 +43,8 @@
 
 	programs.zsh.enable = true;
 
+	programs.hyprland.enable = true;
+
 	security.rtkit.enable = true;
 	services.pipewire = {
 		enable = true;
