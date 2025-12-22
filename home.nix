@@ -11,6 +11,7 @@
 		./modules/neovim.nix
 		./modules/waybar.nix
 		./modules/zsh.nix
+		./modules/misc.nix
 	];
 
 	home.stateVersion = "25.11";

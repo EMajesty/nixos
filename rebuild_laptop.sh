@@ -1,5 +1,6 @@
 #!/bin/sh
 set -euo pipefail
+sudo nix flake update
 sudo nixos-rebuild switch --flake /home/emaj/nixos#laptop
 sudo nix-env --profile "/nix/var/nix/profiles/system" --delete-generations "14d"
 sudo nix-collect-garbage -d

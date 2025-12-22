@@ -8,38 +8,39 @@
 		home-manager.inputs.nixpkgs.follows = "nixpkgs";
 	};
 
-	outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, ...}@inputs:
+	outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, ...}:
 	let
 		system = "x86_64-linux";
+		commonModules = [
+			./modules/common.nix
+			./modules/git.nix
+			./modules/hyprland.nix
+			./modules/misc.nix
+			./modules/neovim.nix
+			./modules/waybar.nix
+			./modules/zsh.nix
+			home-manager.nixosModules.home-manager
+			{
+				home-manager.useGlobalPkgs = true;
+				home-manager.useUserPackages = true;
+				home-manager.users.emaj = import ./home.nix;
+			}
+		];
 	in {
 		nixosConfigurations = {
 			laptop = nixpkgs.lib.nixosSystem {
 				inherit system;
-				specialArgs = { inherit inputs self; };
-				modules = [
-					./modules/common.nix
+				specialArgs = { inherit self; };
+				modules = commonModules ++ [
 					./hosts/laptop.nix
-					home-manager.nixosModules.home-manager
-					{
-						home-manager.useGlobalPkgs = true;
-						home-manager.useUserPackages = true;
-						home-manager.users.emaj = import ./home.nix;
-					}
 				];
 			};
 
 			desktop = nixpkgs.lib.nixosSystem {
 				inherit system;
-				specialArgs = { inherit inputs self; };
-				modules = [
-					./modules/common.nix
+				specialArgs = { inherit self; };
+				modules = commonModules ++ [
 					./hosts/desktop.nix
-					home-manager.nixosModules.home-manager
-					{
-						home-manager.useGlobalPkgs = true;
-						home-manager.useUserPackages = true;
-						home-manager.users.emaj = import ./home.nix;
-					}
 				];
 			};
 		};
