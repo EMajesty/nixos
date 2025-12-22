@@ -13,12 +13,6 @@
 		system = "x86_64-linux";
 		commonModules = [
 			./modules/common.nix
-			./modules/git.nix
-			./modules/hyprland.nix
-			./modules/misc.nix
-			./modules/neovim.nix
-			./modules/waybar.nix
-			./modules/zsh.nix
 			home-manager.nixosModules.home-manager
 			{
 				home-manager.useGlobalPkgs = true;
