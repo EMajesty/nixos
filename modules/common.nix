@@ -27,13 +27,10 @@
 	nixpkgs.config.allowUnfree = true;
 
 	environment.systemPackages = with pkgs; [
-	# neovim
 	ghostty
-	# hyprland
-	# waybar
 	nautilus
-	# git
 	eza
+	fastfetch
 	];
 
 	environment.pathsToLink = [
