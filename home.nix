@@ -1,9 +1,12 @@
 {
   config,
   pkgs,
-  inputs,
   ...
 }:
+
+let
+  inputs = config._module.args.inputs;
+in
 {
   home.username = "emaj";
   home.homeDirectory = "/home/emaj";
