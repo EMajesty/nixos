@@ -87,9 +87,17 @@
         };
 
         languages = {
-          c.enable = true;
+          bash.enable = true;
+          clang.enable = true;
+          csharp.enable = true;
+          css.enable = true;
+          lua.enable = true;
+          markdown.enable = true;
           nix.enable = true;
+          python.enable = true;
           rust.enable = true;
+          ts.enable = true;
+          yaml.enable = true;
         };
       };
     };
