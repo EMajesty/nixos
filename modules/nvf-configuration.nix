@@ -9,6 +9,9 @@ settings = {
         vim.viAlias = true;
         vim.vimAlias = true;
         vim.lsp.enable = true;
+        vim.theme.enable = true;
+        vim.theme.name = "gruvbox";
+        vim.theme.style = "dark";
 };
 };
 }
