@@ -18,7 +18,7 @@ settings = {
                 {
                         key = "<leader>pv";
                         mode = "n";
-                        action = "vim.cmd.Ex";
+                        action = vim.cmd.Ex;
                 }
         ];
 };
