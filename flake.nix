@@ -32,7 +32,7 @@
             imports = [
               ./home.nix
               nvf.homeManagerModules.default
-              zen-browser.homeManagerModules.default
+              zen-browser.packages."${system}".default
             ];
           };
         }
