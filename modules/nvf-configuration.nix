@@ -7,9 +7,6 @@
   programs.nvf = {
     enable = true;
     settings = {
-      plugins = {
-        indent-blankline.enable = true;
-      };
       vim = {
         viAlias = true;
         vimAlias = true;
@@ -18,6 +15,10 @@
           enable = true;
           name = "tokyonight";
           style = "night";
+        };
+
+        visuals = {
+          indent-blankline.enable = true;
         };
 
         lsp.enable = true;
