@@ -13,8 +13,8 @@
 
         theme = {
           enable = true;
-          name = "tokyonight";
-          style = "night";
+          name = "catpuccin";
+          style = "mocha";
         };
 
         visuals = {
