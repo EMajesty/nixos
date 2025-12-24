@@ -2,7 +2,8 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   home.username = "emaj";
   home.homeDirectory = "/home/emaj";
   programs.home-manager.enable = true;
@@ -14,6 +15,7 @@
     ./modules/zsh.nix
     ./modules/misc.nix
     ./modules/nvf-configuration.nix
+    ./modules/zen.nix
   ];
 
   home.stateVersion = "25.11";
