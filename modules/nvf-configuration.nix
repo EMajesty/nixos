@@ -18,7 +18,14 @@ settings = {
                 {
                         key = "<leader>pv";
                         mode = "n";
+                        silent = true;
                         action = "<cmd>Ex<CR>";
+                }
+                {
+                        key = "<leader>m";
+                        mode = ["n" "x"];
+                        silent = true;
+                        action = ":make<CR>";
                 }
         ];
 };
