@@ -5,7 +5,6 @@
 }: {
 programs.nvf = {
 enable = true;
-preset = minimal;
 };
 }
 
