@@ -6,7 +6,7 @@
 		nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 		home-manager.url = "github:nix-community/home-manager/release-25.11";
 		home-manager.inputs.nixpkgs.follows = "nixpkgs";
-                nvf.url = "github:notashelf/nvf"
+                nvf.url = "github:notashelf/nvf";
 	};
 
 	outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, nvf, ...}:
