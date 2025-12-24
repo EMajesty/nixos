@@ -16,9 +16,9 @@ settings = {
         vim.lsp.formatOnSave = true;
         vim.treesitter.enable = true;
 
-        # statusline.lualine.enable = true;
-        telescope.enable = true;
-        # autocomplete.nvim-cmp.enable = true;
+        vim.statusline.lualine.enable = true;
+        vim.telescope.enable = true;
+        vim.autocomplete.nvim-cmp.enable = true;
 
         vim.globals.mapleader = " ";
         vim.keymaps = [
