@@ -7,6 +7,9 @@
   programs.nvf = {
     enable = true;
     settings = {
+      plugins = {
+        indent-blankline.enable = true;
+      };
       vim = {
         viAlias = true;
         vimAlias = true;
@@ -24,10 +27,6 @@
         statusline.lualine.enable = true;
         telescope.enable = true;
         autocomplete.nvim-cmp.enable = true;
-
-        plugins = {
-          indent-blankline.enable = true;
-        };
 
         options = {
           nu = true;
