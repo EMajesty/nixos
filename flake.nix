@@ -43,7 +43,7 @@
       nixosConfigurations = {
         laptop = nixpkgs.lib.nixosSystem {
           inherit system;
-          specialArgs = { inherit self; inputs; };
+          specialArgs = { inherit self inputs; };
           modules = commonModules ++ [
             ./hosts/laptop.nix
           ];
@@ -51,7 +51,7 @@
 
         desktop = nixpkgs.lib.nixosSystem {
           inherit system;
-          specialArgs = { inherit self; inputs; };
+          specialArgs = { inherit self inputs; };
           modules = commonModules ++ [
             ./hosts/desktop.nix
           ];
