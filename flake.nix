@@ -21,7 +21,7 @@
       home-manager,
       nvf,
       ...
-    }@inputs:
+    }:
     let
       system = "x86_64-linux";
       commonModules = [
@@ -43,7 +43,7 @@
       nixosConfigurations = {
         laptop = nixpkgs.lib.nixosSystem {
           inherit system;
-          specialArgs = { inherit self inputs; };
+          specialArgs = { inherit self; };
           modules = commonModules ++ [
             ./hosts/laptop.nix
           ];
@@ -51,7 +51,7 @@
 
         desktop = nixpkgs.lib.nixosSystem {
           inherit system;
-          specialArgs = { inherit self inputs; };
+          specialArgs = { inherit self; };
           modules = commonModules ++ [
             ./hosts/desktop.nix
           ];
