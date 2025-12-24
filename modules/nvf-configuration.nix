@@ -21,6 +21,7 @@
           indent-blankline.enable = true;
         };
 
+        git.enable = true;
         lsp.enable = true;
         lsp.formatOnSave = true;
         treesitter.enable = true;
