@@ -81,6 +81,10 @@
           }
         ];
 
+        binds = {
+          whichKey.enable = true;
+        };
+
         languages = {
           nix.enable = true;
           rust.enable = true;
