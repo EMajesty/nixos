@@ -3,9 +3,12 @@
   lib,
   ...
 }: {
-  vim.theme.enable = true;
-  vim.theme.name = "gruvbox";
-  vim.theme.style = "dark";
+  enable = true;
+  preset = minimal;
 
-  vim.languages.nix.enable = true;
+settings = {
+                coloscheme = "tokyonight";
+                enableLsp = true;
+                enableTreesitter = true;
+        }
 }
