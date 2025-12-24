@@ -26,7 +26,7 @@
         home-manager.useUserPackages = true;
         home-manager.users.emaj = import ./home.nix;
       }
-      nvf.homeManagerModules.default
+      nvf.nixosModules.default
     ];
   in {
     nixosConfigurations = {
