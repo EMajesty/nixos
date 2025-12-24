@@ -88,7 +88,7 @@
         lsp = {
           enable = true;
           formatOnSave = true;
-          servers.nil_ls.settings.autoArchive = true;
+          # servers.nil_ls.settings.autoArchive = true;
         };
 
         languages = {
