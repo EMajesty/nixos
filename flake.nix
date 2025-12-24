@@ -24,9 +24,13 @@
       {
         home-manager.useGlobalPkgs = true;
         home-manager.useUserPackages = true;
-        home-manager.users.emaj = import ./home.nix;
+        home-manager.users.emaj = {
+		imports = [
+			./home.nix;
+		      nvf.homeManagerModules.default
+	      ];
+	      };
       }
-      nvf.homeManagerModules.default
     ];
   in {
     nixosConfigurations = {
