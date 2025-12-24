@@ -13,6 +13,8 @@ settings = {
         vim.theme.name = "gruvbox";
         vim.theme.style = "dark";
 
+        vim.lsp.formatOnSave = true;
+
         vim.globals.mapleader = " ";
         vim.keymaps = [
                 {
@@ -26,6 +28,12 @@ settings = {
                         mode = ["n" "x"];
                         silent = true;
                         action = ":make<CR>";
+                }
+                {
+                        key = "<leader>y";
+                        mode = ["n" "v"];
+                        silent = true;
+                        action = "<cmd>\"+y";
                 }
         ];
 };
