@@ -10,7 +10,7 @@
   imports = [
     ./modules/git.nix
     ./modules/hyprland.nix
-    ./modules/waybar.nix
+    # ./modules/waybar.nix
     ./modules/zsh.nix
     ./modules/misc.nix
     ./modules/nvf-configuration.nix
