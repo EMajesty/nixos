@@ -17,6 +17,7 @@
       nixpkgs-unstable,
       home-manager,
       nvf,
+      zen-browser,
       ...
     }:
     let
@@ -31,6 +32,7 @@
             imports = [
               ./home.nix
               nvf.homeManagerModules.default
+              zen-browser.homeManagerModules.default
             ];
           };
         }
