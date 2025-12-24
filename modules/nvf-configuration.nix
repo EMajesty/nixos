@@ -12,7 +12,7 @@ settings = {
 
                 theme = {
                         enable = true;
-                        name = "gruvbox";
+                        name = "tokyonight";
                         style = "dark";
                 };
 
