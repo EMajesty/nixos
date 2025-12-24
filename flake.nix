@@ -27,11 +27,10 @@
         home-manager.users.emaj = {
 		imports = [
 			./home.nix
-		      # nvf.homeManagerModules.default
+		      nvf.homeManagerModules.default
 	      ];
 	      };
       }
-      nvf.nixosModules.default
     ];
   in {
     nixosConfigurations = {
