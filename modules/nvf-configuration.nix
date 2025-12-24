@@ -26,20 +26,23 @@ settings = {
                         {
                                 key = "<leader>pv";
                                 mode = "n";
-                                silent = true;
-                                action = "<cmd>Ex<CR>";
+                                action = "Ex";
                         }
                         {
                                 key = "<leader>m";
                                 mode = ["n" "x"];
-                                silent = true;
                                 action = ":make<CR>";
                         }
                         {
                                 key = "<leader>y";
                                 mode = ["n" "v"];
+                                action = "\"+y";
+                        }
+                        {
+                                key = "<leader>x";
+                                mode = "n";
                                 silent = true;
-                                action = "<cmd>\"+y";
+                                action = "<cmd>!chmod +x %<CR>";
                         }
                 ];
         };
