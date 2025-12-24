@@ -16,7 +16,9 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
   services.displayManager.ly = {
     enable = true;
-    animation = "colormix";
+    settings = {
+      animation = "colormix";
+    };
   };
 
   hardware.bluetooth = {
