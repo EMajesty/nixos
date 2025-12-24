@@ -20,8 +20,9 @@
       nixpkgs-unstable,
       home-manager,
       nvf,
+      zen-browser,
       ...
-    }:
+    }@inputs:
     let
       system = "x86_64-linux";
       commonModules = [

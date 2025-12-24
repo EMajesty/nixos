@@ -1,13 +1,16 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }:
 
 {
   home.username = "emaj";
   home.homeDirectory = "/home/emaj";
-  programs.home-manager.enable = true;
+  home.packages = with pkgs; [
+    inputs.zen-browser.packages."${system}".specific
+  ];
 
   imports = [
     ./modules/git.nix
@@ -19,5 +22,6 @@
     # ./modules/zen.nix
   ];
 
+  programs.home-manager.enable = true;
   home.stateVersion = "25.11";
 }
