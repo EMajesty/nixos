@@ -18,7 +18,7 @@ settings = {
                 {
                         key = "<leader>pv";
                         mode = "n";
-                        action = "<cmd>Ex";
+                        action = "<cmd>Ex<CR>";
                 }
         ];
 };
