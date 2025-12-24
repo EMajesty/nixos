@@ -14,7 +14,7 @@
     ./modules/waybar.nix
     ./modules/zsh.nix
     ./modules/misc.nix
-    ./modules/nvf-configuration.nix
+    # ./modules/nvf-configuration.nix
   ];
 
   home.stateVersion = "25.11";
