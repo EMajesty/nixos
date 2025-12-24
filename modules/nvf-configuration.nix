@@ -16,7 +16,7 @@ settings = {
         vim.lsp.formatOnSave = true;
         vim.treesitter.enable = true;
 
-        statusline.lualine.enable = true;
+        # statusline.lualine.enable = true;
         telescope.enable = true;
         # autocomplete.nvim-cmp.enable = true;
 
