@@ -72,6 +72,7 @@ settings = {
 
                 languages = {
                     assembly.lsp.enable = true;
+                    nix.lsp.enable = true;
                 };
         };
 };
