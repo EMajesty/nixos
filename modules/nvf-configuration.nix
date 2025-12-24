@@ -18,7 +18,7 @@ settings = {
 
         statusline.lualine.enable = true;
         telescope.enable = true;
-        autocomplete.nvim-cmp.enable = true;
+        # autocomplete.nvim-cmp.enable = true;
 
         vim.globals.mapleader = " ";
         vim.keymaps = [
