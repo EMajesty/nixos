@@ -25,6 +25,10 @@
         telescope.enable = true;
         autocomplete.nvim-cmp.enable = true;
 
+        plugins = {
+          indent-blankline.enable = true;
+        };
+
         options = {
           nu = true;
           relativenumber = true;
