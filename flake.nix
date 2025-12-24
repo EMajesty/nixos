@@ -21,7 +21,7 @@
       home-manager,
       nvf,
       ...
-    }:
+    }@inputs:
     let
       system = "x86_64-linux";
       commonModules = [
