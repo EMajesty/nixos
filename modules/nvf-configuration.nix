@@ -14,7 +14,7 @@ settings = {
                         enable = true;
                         name = "gruvbox";
                         style = "dark";
-                }
+                };
 
                 lsp.enable = true;
                 lsp.formatOnSave = true;
@@ -40,7 +40,7 @@ settings = {
                         signcolumn = "yes";
                         updatetime = 50;
                         colorcolumn = "120";
-                }
+                };
 
                 globals.mapleader = " ";
                 keymaps = [
