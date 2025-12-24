@@ -43,6 +43,7 @@ settings = {
                 };
 
                 highlight.normal.bg = "none";
+                highlight.normalfloat.bg = "none";
 
                 globals.mapleader = " ";
                 keymaps = [
