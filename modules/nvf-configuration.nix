@@ -9,9 +9,12 @@ settings = {
         vim = {
                 viAlias = true;
                 vimAlias = true;
-                theme.enable = true;
-                theme.name = "gruvbox";
-                theme.style = "dark";
+
+                theme = {
+                        enable = true;
+                        name = "gruvbox";
+                        style = "dark";
+                }
 
                 lsp.enable = true;
                 lsp.formatOnSave = true;
@@ -20,6 +23,24 @@ settings = {
                 statusline.lualine.enable = true;
                 telescope.enable = true;
                 autocomplete.nvim-cmp.enable = true;
+
+                opt = {
+                        nu = true;
+                        relativenumber = true;
+                        tabstop = 4;
+                        softtabstop = 4;
+                        shiftwidth = 4;
+                        expandtab = true;
+                        smartindent = true;
+                        wrap = false;
+                        hlsearch = false;
+                        incsearch = true;
+                        termguicolors = true;
+                        scrolloff = 8;
+                        signcolumn = "yes";
+                        updatetime = 50;
+                        colorcolumn = "120";
+                }
 
                 globals.mapleader = " ";
                 keymaps = [
