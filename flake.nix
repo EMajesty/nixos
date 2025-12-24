@@ -6,9 +6,10 @@
 		nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 		home-manager.url = "github:nix-community/home-manager/release-25.11";
 		home-manager.inputs.nixpkgs.follows = "nixpkgs";
+                nvf.url = "github:notashelf/nvf"
 	};
 
-	outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, ...}:
+	outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, nvf, ...}:
 	let
 		system = "x86_64-linux";
 		commonModules = [
@@ -19,6 +20,11 @@
 				home-manager.useUserPackages = true;
 				home-manager.users.emaj = import ./home.nix;
 			}
+                        packages."x86_64-linux".default =
+                                (nvf.lib.neovimConfiguration {
+                                        pkgs = nixpkgs.legacyPackages."x86_64-linux";
+                                        modules = [ ./modules/nvf-configuration.nix ];
+                                }).neovim;
 		];
 	in {
 		nixosConfigurations = {
