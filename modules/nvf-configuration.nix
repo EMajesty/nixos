@@ -22,8 +22,6 @@
         };
 
         git.enable = true;
-        lsp.enable = true;
-        lsp.formatOnSave = true;
         treesitter.enable = true;
 
         statusline.lualine.enable = true;
@@ -85,6 +83,12 @@
 
         binds = {
           whichKey.enable = true;
+        };
+
+        lsp = {
+          enable = true;
+          formatOnSave = true;
+          servers.nil_ls.settings.autoArchive = true;
         };
 
         languages = {
