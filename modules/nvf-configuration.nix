@@ -55,7 +55,7 @@
           {
             key = "<leader>pv";
             mode = "n";
-            action = "Ex";
+            action = ":Ex<CR>";
           }
           {
             key = "<leader>m";
