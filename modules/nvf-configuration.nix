@@ -13,7 +13,7 @@ settings = {
                 theme = {
                         enable = true;
                         name = "tokyonight";
-                        # style = "dark";
+                        style = "night";
                 };
 
                 lsp.enable = true;
