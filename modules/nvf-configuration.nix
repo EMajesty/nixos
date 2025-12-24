@@ -13,8 +13,8 @@
 
         theme = {
           enable = true;
-          name = "catpuccin";
-          style = "mocha";
+          name = "dracula";
+          style = "";
         };
 
         visuals = {
