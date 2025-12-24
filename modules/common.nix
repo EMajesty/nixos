@@ -2,7 +2,8 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   swapDevices = [
     {
       device = "/var/lib/swapfile";
@@ -29,7 +30,10 @@
 
   users.users.emaj = {
     isNormalUser = true;
-    extraGroups = ["networkmanager" "wheel"];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
     shell = pkgs.zsh;
   };
 
@@ -54,6 +58,7 @@
     mate.eom
     nautilus
     ntfs3g
+    p7zip
     pavucontrol
     samba
     tmux
@@ -63,6 +68,8 @@
     wofi
     xfce.tumbler
     xdg-desktop-portal-hyprland
+    xz
+    zip
   ];
 
   # environment.pathsToLink = [
@@ -117,7 +124,10 @@
   # 	randomizedDelaySec = "45min";
   # };
 
-  nix.settings.experimental-features = ["nix-command" "flakes"];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   system.stateVersion = "25.11";
 }
