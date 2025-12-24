@@ -7,7 +7,10 @@
     home-manager.url = "github:nix-community/home-manager/release-25.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nvf.url = "github:notashelf/nvf";
-    zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -40,7 +43,7 @@
       nixosConfigurations = {
         laptop = nixpkgs.lib.nixosSystem {
           inherit system;
-          specialArgs = { inherit self; };
+          specialArgs = { inherit self; inputs; };
           modules = commonModules ++ [
             ./hosts/laptop.nix
           ];
@@ -48,7 +51,7 @@
 
         desktop = nixpkgs.lib.nixosSystem {
           inherit system;
-          specialArgs = { inherit self; };
+          specialArgs = { inherit self; inputs; };
           modules = commonModules ++ [
             ./hosts/desktop.nix
           ];
