@@ -34,6 +34,10 @@
               nvf.homeManagerModules.default
             ];
           };
+          home-manager.extraSpecialArgs = {
+            inherit inputs;
+            system = "x86_64-linux";
+          };
         }
       ];
     in
@@ -41,7 +45,7 @@
       nixosConfigurations = {
         laptop = nixpkgs.lib.nixosSystem {
           inherit system;
-          specialArgs = { inherit inputs; };
+          specialArgs = { inherit self; };
           modules = commonModules ++ [
             ./hosts/laptop.nix
           ];
@@ -49,7 +53,7 @@
 
         desktop = nixpkgs.lib.nixosSystem {
           inherit system;
-          specialArgs = { inherit inputs; };
+          specialArgs = { inherit self; };
           modules = commonModules ++ [
             ./hosts/desktop.nix
           ];
