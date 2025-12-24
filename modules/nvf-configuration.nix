@@ -42,6 +42,8 @@ settings = {
                         colorcolumn = "120";
                 };
 
+                highlight.normal.bg = "none";
+
                 globals.mapleader = " ";
                 keymaps = [
                         {
