@@ -14,7 +14,10 @@
   boot.loader.limine.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
-  services.displayManager.ly.enable = true;
+  services.displayManager.ly = {
+    enable = true;
+    animation = "colormix";
+  };
 
   hardware.bluetooth = {
     enable = true;
