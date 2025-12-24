@@ -48,6 +48,7 @@
     freerdp
     gdb
     ghostty
+    home-manager
     hyprpicker
     hyprshot
     mate.eom
