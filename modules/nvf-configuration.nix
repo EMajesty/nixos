@@ -8,12 +8,13 @@ enable = true;
 settings = {
         vim.viAlias = true;
         vim.vimAlias = true;
-        vim.lsp.enable = true;
         vim.theme.enable = true;
         vim.theme.name = "gruvbox";
         vim.theme.style = "dark";
 
+        vim.lsp.enable = true;
         vim.lsp.formatOnSave = true;
+        vim.treesitter.enable = true;
 
         vim.globals.mapleader = " ";
         vim.keymaps = [
