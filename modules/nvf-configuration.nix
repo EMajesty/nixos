@@ -24,7 +24,7 @@ settings = {
                 telescope.enable = true;
                 autocomplete.nvim-cmp.enable = true;
 
-                opt = {
+                options = {
                         nu = true;
                         relativenumber = true;
                         tabstop = 4;
