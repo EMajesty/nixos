@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }:
 {
@@ -9,6 +10,7 @@
   programs.home-manager.enable = true;
 
   imports = [
+    inputs.zen-browser.homeModules.twilight
     ./modules/git.nix
     ./modules/hyprland.nix
     ./modules/waybar.nix
