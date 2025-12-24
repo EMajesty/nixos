@@ -23,7 +23,6 @@ settings = {
                 statusline.lualine.enable = true;
                 telescope.enable = true;
                 autocomplete.nvim-cmp.enable = true;
-                indent-blankline.enable = true;
 
                 options = {
                         nu = true;
@@ -70,6 +69,10 @@ settings = {
                                 action = "<cmd>!chmod +x %<CR>";
                         }
                 ];
+
+                languages = {
+                    assembly.lsp.enable = true;
+                };
         };
 };
 };
