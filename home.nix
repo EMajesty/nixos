@@ -10,7 +10,6 @@
   imports = [
     ./modules/git.nix
     ./modules/hyprland.nix
-    # ./modules/neovim.nix
     ./modules/waybar.nix
     ./modules/zsh.nix
     ./modules/misc.nix
