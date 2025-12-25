@@ -21,5 +21,20 @@
         Fingerprinting = true;
       };
     };
+    profiles.default =
+      let
+        pins = {
+          "perplexity" = {
+            url = "https://perplexity.ai";
+            isEssential = true;
+            position = 101;
+          };
+        };
+      in
+      {
+        pinsForce = true;
+        inherit pins;
+      };
+
   };
 }
