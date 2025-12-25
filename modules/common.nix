@@ -114,12 +114,7 @@
     fira-code
     fira-code-symbols
     jetbrains-mono
-    (nerdfonts.override {
-      fonts = [
-        "FiraCode"
-        "JetBrainsMono"
-      ];
-    })
+    nerd-fonts
   ];
 
   programs.nix-ld.enable = true;
