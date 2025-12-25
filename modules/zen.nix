@@ -23,9 +23,10 @@
     };
     profiles.default =
       let
+        containers = { };
+        spaces = { };
         pins = {
           "perplexity" = {
-            id = "9d8a8f91-7e29-4688-ae2e-da4e49d4a179";
             url = "https://perplexity.ai";
             isEssential = true;
             position = 101;
@@ -69,7 +70,7 @@
       in
       {
         pinsForce = true;
-        inherit pins;
+        inherit containers spaces pins;
       };
 
   };
