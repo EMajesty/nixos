@@ -90,6 +90,7 @@
   stylix = {
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/dracula.yaml";
+    image = "https://i.redd.it/7oxaztid8wud1.png";
     polarity = "dark";
   };
 
