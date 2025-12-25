@@ -9,8 +9,8 @@
 {
   home.username = "emaj";
   home.homeDirectory = "/home/emaj";
-  home.packages = with pkgs; [
-  ];
+  # home.packages = with pkgs; [
+  # ];
 
   imports = [
     inputs.zen-browser.packages."${system}".twilight
