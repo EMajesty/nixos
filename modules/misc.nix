@@ -11,5 +11,5 @@
   services.hypridle = {
     enable = true;
   };
-  programs.mullvad.enable = true;
+  programs.mullvad-vpn.enable = true;
 }
