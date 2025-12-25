@@ -14,9 +14,4 @@
   services.swww = {
     enable = true;
   };
-  programs.waybar = {
-    enable = true;
-    style = "./waybar.css";
-    systemd.enable = true;
-  };
 }
