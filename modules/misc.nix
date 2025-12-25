@@ -11,7 +11,4 @@
   services.hypridle = {
     enable = true;
   };
-  services.swww = {
-    enable = true;
-  };
 }
