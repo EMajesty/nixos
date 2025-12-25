@@ -114,7 +114,7 @@
     fira-code
     fira-code-symbols
     jetbrains-mono
-    nerd-fonts
+    nerd-fonts.symbols-only
   ];
 
   programs.nix-ld.enable = true;
