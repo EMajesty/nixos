@@ -31,6 +31,10 @@
       };
     };
     profiles.default = {
+      packages = with inputs.firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
+        ublock-origin
+        dearrow
+      ];
       search = {
         force = true;
         default = "ddg";
