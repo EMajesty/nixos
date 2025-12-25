@@ -21,6 +21,10 @@
         Fingerprinting = true;
       };
     };
+    profiles.default.search = {
+      force = true;
+      default = "ddg";
+    };
     profiles.default =
       let
         containers = { };
