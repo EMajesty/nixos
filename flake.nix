@@ -27,6 +27,7 @@
       system = "x86_64-linux";
       commonModules = [
         ./modules/common.nix
+        stylix.nixosModules.stylix
         home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
@@ -35,7 +36,6 @@
             imports = [
               ./home.nix
               nvf.homeManagerModules.default
-              stylix.nixosModules.stylix
             ];
           };
           home-manager.extraSpecialArgs = {
