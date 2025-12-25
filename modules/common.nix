@@ -109,6 +109,17 @@
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-color-emoji
+    liberation_ttf
+    dejavu_fonts
+    fira-code
+    fira-code-symbols
+    jetbrains-mono
+    (nerdfonts.override {
+      fonts = [
+        "FiraCode"
+        "JetBrainsMono"
+      ];
+    })
   ];
 
   programs.nix-ld.enable = true;
