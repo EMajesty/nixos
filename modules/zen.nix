@@ -31,7 +31,7 @@
       };
     };
     profiles.default = {
-      packages = with inputs.firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
+      extensions.packages = with inputs.firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
         ublock-origin
         dearrow
       ];
