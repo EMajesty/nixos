@@ -20,7 +20,7 @@
     ./modules/zsh.nix
     ./modules/misc.nix
     ./modules/nvf-configuration.nix
-    # ./modules/zen.nix
+    ./modules/zen.nix
     ./modules/ghostty.nix
   ];
 
