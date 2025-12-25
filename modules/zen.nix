@@ -30,9 +30,18 @@
         Fingerprinting = true;
       };
     };
-    profiles.default.search = {
-      force = true;
-      default = "ddg";
+    profiles.default = {
+      search = {
+        force = true;
+        default = "ddg";
+      };
+      pins = {
+        "perplexity" = {
+          url = "https://perplexity.ai";
+          isEssential = true;
+          position = 101;
+        };
+      };
     };
   };
 }
