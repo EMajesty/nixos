@@ -8,7 +8,7 @@
       background-opacity = "0.8";
       background-blur = true;
       confirm-close-surface = false;
-      font-family = "Berkeley Mono";
+      font-family = "Berkeley Mono Variable";
       # font-size = ;
     };
   };
