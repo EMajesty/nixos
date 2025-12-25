@@ -86,6 +86,7 @@
   # ];
 
   programs.zsh.enable = true;
+  stylix.enable = true;
 
   xdg.portal = {
     enable = true;
