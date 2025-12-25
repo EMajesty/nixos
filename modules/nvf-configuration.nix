@@ -11,11 +11,11 @@
         viAlias = true;
         vimAlias = true;
 
-        # theme = {
-        #   enable = true;
-        #   name = "dracula";
-        #   style = "";
-        # };
+        theme = {
+          enable = true;
+          #   name = "dracula";
+          #   style = "";
+        };
 
         visuals = {
           indent-blankline.enable = true;

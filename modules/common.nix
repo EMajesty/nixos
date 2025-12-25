@@ -54,6 +54,7 @@
     clang
     clang-tools
     cmake
+    cmatrix
     efibootmgr
     eza
     fastfetch
