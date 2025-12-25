@@ -1,5 +1,8 @@
 { config, pkgs, ... }:
 {
-  stylix.enable = true;
-  stylix.image = ../../Pictures/wallpapers/wallpaper.png;
+  stylix = {
+    enable = true;
+    polarity = "dark";
+    image = ../../Pictures/wallpapers/wallpaper.png;
+  };
 }

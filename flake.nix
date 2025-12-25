@@ -35,6 +35,7 @@
             imports = [
               ./home.nix
               nvf.homeManagerModules.default
+              stylix.nixosModules.stylix
             ];
           };
           home-manager.extraSpecialArgs = {
@@ -42,7 +43,6 @@
             system = "x86_64-linux";
           };
         }
-        stylix.nixosModules.stylix
       ];
     in
     {
