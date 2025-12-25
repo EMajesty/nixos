@@ -5,7 +5,7 @@
     enable = true;
     systemd.enable = true;
     systemd.target = "hyprland-session.target";
-    style = ./waybar.css;
+    # style = ./waybar.css;
     settings = [
       {
         reload_style_on_change = true;
