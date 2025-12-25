@@ -37,6 +37,7 @@
       };
       pins = {
         "perplexity" = {
+          id = "c43be71d-89f7-49a7-a5b2-5ef7983689ce";
           url = "https://perplexity.ai";
           isEssential = true;
           position = 101;
