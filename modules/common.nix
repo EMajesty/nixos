@@ -56,7 +56,7 @@
     fastfetch
     freerdp
     gdb
-    ghostty
+    # ghostty
     home-manager
     hyprpicker
     hyprshot
