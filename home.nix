@@ -10,10 +10,10 @@
   home.username = "emaj";
   home.homeDirectory = "/home/emaj";
   home.packages = with pkgs; [
-    inputs.zen-browser.packages."${system}".twilight
   ];
 
   imports = [
+    inputs.zen-browser.packages."${system}".twilight
     ./modules/git.nix
     ./modules/hyprland.nix
     ./modules/waybar.nix
