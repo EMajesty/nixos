@@ -32,8 +32,14 @@
     };
     profiles.default = {
       extensions.packages = with inputs.firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
+        bitwarden
         ublock-origin
+        privacy-badger
+        decentraleyes
+        darkreader
+        sponsorblock
         dearrow
+        imagus
       ];
       search = {
         force = true;
