@@ -39,7 +39,7 @@
         darkreader
         sponsorblock
         dearrow
-        imagus
+        # imagus
       ];
       search = {
         force = true;
