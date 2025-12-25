@@ -6,6 +6,7 @@
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager/release-25.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    stylix.url = "github:nix-community/stylix/release-25.11";
     nvf.url = "github:notashelf/nvf";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     firefox-addons.url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
@@ -17,6 +18,7 @@
       nixpkgs,
       nixpkgs-unstable,
       home-manager,
+      stylix,
       nvf,
       zen-browser,
       ...
@@ -40,6 +42,7 @@
             system = "x86_64-linux";
           };
         }
+        stylix.nixosModules.stylix
       ];
     in
     {
