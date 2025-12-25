@@ -86,7 +86,11 @@
   # ];
 
   programs.zsh.enable = true;
-  stylix.enable = true;
+  stylix = {
+    enable = true;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/dracula.yaml";
+    polarity = "dark";
+  };
 
   xdg.portal = {
     enable = true;
