@@ -11,4 +11,5 @@
   services.hypridle = {
     enable = true;
   };
+  programs.mullvad.enable = true;
 }
