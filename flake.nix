@@ -30,6 +30,9 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.users.emaj = {
+            nixpkgs.config = {
+              allowUnfree = true;
+            };
             imports = [
               ./home.nix
               nvf.homeManagerModules.default
