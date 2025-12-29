@@ -101,7 +101,7 @@
     autoEnable = true;
     targets = {
       # neovim.enable = false;
-      nvf.enable = false;
+      # nvf.enable = false;
     };
     base16Scheme = "${pkgs.base16-schemes}/share/themes/dracula.yaml";
     image = pkgs.fetchurl {
