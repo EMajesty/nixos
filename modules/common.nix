@@ -48,7 +48,7 @@
     packages = with pkgs; [ terminus_font ];
     # font = "Lat2-Terminus16";
     # font = "iso02-12x22";
-    font = "solar24x32";
+    font = "sun12x22";
     # keyMap = "us_nords";
   };
 
