@@ -100,7 +100,7 @@
     enable = true;
     autoEnable = true;
     targets = {
-      neovim.enable = false;
+      # neovim.enable = false;
       nvf.enable = false;
     };
     base16Scheme = "${pkgs.base16-schemes}/share/themes/dracula.yaml";
