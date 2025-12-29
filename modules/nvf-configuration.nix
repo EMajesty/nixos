@@ -13,8 +13,8 @@
 
         theme = {
           enable = true;
-          #   name = "dracula";
-          #   style = "";
+          name = "dracula";
+          style = "";
         };
 
         visuals = {

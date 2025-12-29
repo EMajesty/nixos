@@ -42,6 +42,14 @@
     shell = pkgs.zsh;
   };
 
+  console = {
+    enable = true;
+    earlySetup = true;
+    packages = with pkgs; [ terminus_font ];
+    font = "ter-v32n";
+    # keyMap = "us_nords";
+  };
+
   nixpkgs.config = {
     allowUnfree = true;
     # allowUnfreePredicate = _: true;
@@ -90,6 +98,11 @@
   programs.zsh.enable = true;
   stylix = {
     enable = true;
+    autoEnable = true;
+    targets = {
+      neovim.enable = false;
+      nvf.enable = false;
+    };
     base16Scheme = "${pkgs.base16-schemes}/share/themes/dracula.yaml";
     image = pkgs.fetchurl {
       url = "https://i.redd.it/7oxaztid8wud1.png";
