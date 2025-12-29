@@ -69,6 +69,7 @@
     ntfs3g
     p7zip
     pavucontrol
+    rapidraw
     samba
     tmux
     unzip
