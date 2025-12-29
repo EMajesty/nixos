@@ -46,7 +46,7 @@
     enable = true;
     earlySetup = true;
     packages = with pkgs; [ terminus_font ];
-    font = "ter-v32n";
+    font = "Lat2-Terminus16";
     # keyMap = "us_nords";
   };
 
