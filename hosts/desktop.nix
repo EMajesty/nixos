@@ -1,7 +1,9 @@
-{ config, pkgs, ... };
+{ config, pkgs, ... }:
 
 {
-	networking.hostName = "psyche";
+  networking.hostName = "psyche";
 
-	imports = [ ];
+  imports = [ ];
+
+  boot.initrd.kernelModules = [ "amdgpu" ];
 }
