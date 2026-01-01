@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  services.mako = {
+  services.dunst = {
     enable = true;
   };
   services.udiskie = {
