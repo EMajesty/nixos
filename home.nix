@@ -13,6 +13,7 @@
   # ];
 
   imports = [
+    inputs.stylix.homeModules.stylix
     ./modules/git.nix
     ./modules/hyprland.nix
     ./modules/waybar.nix
