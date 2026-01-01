@@ -88,9 +88,7 @@
         lsp = {
           enable = true;
           formatOnSave = true;
-          settings = {
-            nil.nix.autoArchive = true;
-          };
+          servers.nixd.settings.nil.nix.autoArchive = true;
         };
 
         languages = {
