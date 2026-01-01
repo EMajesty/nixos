@@ -88,7 +88,15 @@
         lsp = {
           enable = true;
           formatOnSave = true;
-          # servers.nil_ls.settings.autoArchive = true;
+          settings = {
+            nil = {
+              nix = {
+                flake = {
+                  autoArchive = true;
+                };
+              };
+            };
+          };
         };
 
         languages = {
