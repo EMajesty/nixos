@@ -13,7 +13,6 @@
   # ];
 
   imports = [
-    inputs.stylix.homeModules.stylix
     ./modules/git.nix
     ./modules/hyprland.nix
     ./modules/waybar.nix
@@ -22,7 +21,6 @@
     ./modules/nvf-configuration.nix
     ./modules/zen.nix
     ./modules/ghostty.nix
-    ./modules/stylix.nix
   ];
 
   programs.home-manager.enable = true;
