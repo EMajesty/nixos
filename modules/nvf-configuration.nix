@@ -90,7 +90,6 @@
           formatOnSave = true;
           settings = {
             nil.nix.autoArchive = true;
-            };
           };
         };
 
