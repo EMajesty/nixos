@@ -1,18 +1,20 @@
 { config, pkgs, ... }:
 
 {
-	networking.hostName = "antares";
+  networking.hostName = "antares";
 
-	imports = [
-		../hardware/laptop-hardware.nix
-	];
+  imports = [
+    ../hardware/laptop-hardware.nix
+  ];
 
-	services.power-profiles-daemon.enable = true;
-	# services.tlp.enable = true;
+  services.power-profiles-daemon.enable = true;
+  # services.tlp.enable = true;
 
-	services.logind.settings = {
-		Login = {
-			HandleLidSwitch = "suspend";
-		};
-	};
+  services.logind.settings = {
+    Login = {
+      HandleLidSwitch = "suspend";
+    };
+  };
+
+  boot.initrd.kernelModules = [ "i915" ];
 }
