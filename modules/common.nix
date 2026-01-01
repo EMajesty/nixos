@@ -104,7 +104,6 @@
     enable = true;
     autoEnable = true;
     targets = {
-      tty.enable = false;
       # neovim.enable = false;
       # nvf.enable = false;
     };
