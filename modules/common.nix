@@ -14,6 +14,7 @@
   boot.loader.limine.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
+
   services.displayManager.ly = {
     enable = true;
     settings = {
@@ -98,6 +99,7 @@
   # ];
 
   programs.zsh.enable = true;
+
   stylix = {
     enable = true;
     autoEnable = true;
