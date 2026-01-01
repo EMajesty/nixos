@@ -1,5 +1,5 @@
 #!/bin/sh
-set -euo pipefail
+# set -euo pipefail
 git add .
 git commit -m "good shit"
 git push
