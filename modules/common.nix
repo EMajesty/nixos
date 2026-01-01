@@ -73,6 +73,7 @@
     gdb
     # ghostty
     home-manager
+    hyprpaper
     hyprpicker
     hyprshot
     mate.eom
