@@ -127,7 +127,7 @@
   };
 
   programs.hyprland.enable = true;
-  programs.hyprpaper.enable = true;
+  services.hyprpaper.enable = true;
   services.hypridle.enable = true;
   programs.hyprlock.enable = true;
 
