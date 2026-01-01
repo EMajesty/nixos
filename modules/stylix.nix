@@ -7,7 +7,7 @@
       # neovim.enable = false;
       # nvf.enable = false;
     };
-    # base16Scheme = "${pkgs.base16-schemes}/share/themes/dracula.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/dracula.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/evergreen.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/penumbra-dark.yaml";
     image = pkgs.fetchurl {
