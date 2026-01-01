@@ -11,7 +11,11 @@
     }
   ];
 
-  boot.loader.limine.enable = true;
+  boot.loader.limine = {
+    enable = true;
+    style.graphicalTerminal.background = "FF000000";
+  };
+
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
