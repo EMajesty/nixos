@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  lib,
   ...
 }:
 {
@@ -13,7 +14,7 @@
 
   boot.loader.limine = {
     enable = true;
-    style.graphicalTerminal.background = "FF000000";
+    style.graphicalTerminal.background = lib.mkForce "FF000000";
   };
 
   boot.loader.efi.canTouchEfiVariables = true;
