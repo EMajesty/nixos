@@ -89,12 +89,7 @@
           enable = true;
           formatOnSave = true;
           settings = {
-            nil = {
-              nix = {
-                flake = {
-                  autoArchive = true;
-                };
-              };
+            nil.nix.autoArchive = true;
             };
           };
         };
