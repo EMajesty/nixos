@@ -19,6 +19,5 @@
   boot.initrd.kernelModules = [ "i915" ];
 
   environment.systemPackages = with pkgs; [
-    krita
   ];
 }
