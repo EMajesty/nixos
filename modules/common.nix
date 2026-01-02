@@ -93,7 +93,7 @@
     samba
     tmux
     unzip
-    ventoy
+    # ventoy
     vial
     vlc
     vesktop
