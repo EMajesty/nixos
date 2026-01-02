@@ -81,15 +81,20 @@
     hyprpaper
     hyprpicker
     hyprshot
+    kicad
     mate.eom
+    mgba
     nautilus
     ntfs3g
     p7zip
     pavucontrol
+    qbittorrent
     rapidraw
     samba
     tmux
     unzip
+    ventoy
+    vial
     vlc
     vesktop
     wofi
