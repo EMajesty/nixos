@@ -93,10 +93,13 @@
     qbittorrent
     rapidraw
     samba
+    spice-gtk
     tmux
     unzip
     # ventoy
     vial
+    virt-manager
+    virt-viewer
     vlc
     vesktop
     wofi
@@ -179,7 +182,13 @@
   # 	randomizedDelaySec = "45min";
   # };
 
-  virtualisation.libvirtd.enable = true;
+  virtualisation.libvirtd = {
+    enable = true;
+    qemu = {
+      runAsRoot = false;
+      swtpm.enable = true;
+    };
+  };
 
   nix.settings.experimental-features = [
     "nix-command"
