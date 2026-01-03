@@ -26,7 +26,7 @@
   ];
 
   stylix = {
-    image = "Pictures/wallpapers/city.jpg";
+    image = "/home/emaj/Pictures/wallpapers/city.jpg";
     targets = {
       hyprpaper.enable = lib.mkForce false;
     };
