@@ -10,7 +10,12 @@
       "$fileManager" = "nautilus";
       "$menu" = "wofi --show drun";
 
-      env = [ ];
+      env = [
+        "XCURSOR_THEME,Bibata-Modern-Classic"
+        "XCURSOR_SIZE,24"
+        "HYPRCURSOR_THEME,Bibata-Modern-Classic"
+        "HYPRCURSOR_SIZE,24"
+      ];
 
       monitor = ",preferred,auto,1";
 
