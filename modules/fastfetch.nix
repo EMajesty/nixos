@@ -59,7 +59,7 @@
           type = "custom";
           format = "└──────────────────────────────────────────┘";
         }
-        break
+        # break
         {
           type = "title";
           key = "  ";
@@ -118,7 +118,7 @@
           paddingLeft = 2;
           symbol = "circle";
         }
-        break
+        # break
       ];
     };
   };
