@@ -22,7 +22,7 @@
     ./modules/nvf-configuration.nix
     ./modules/zen.nix
     ./modules/ghostty.nix
-    ./modules/random_background.nix
+    ./modules/random_hyprpaper.nix
   ];
 
   stylix.targets = {
