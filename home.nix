@@ -21,6 +21,7 @@
     ./modules/nvf-configuration.nix
     ./modules/zen.nix
     ./modules/ghostty.nix
+    ./modules/random_wallpaper.nix
   ];
 
   programs.home-manager.enable = true;
