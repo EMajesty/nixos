@@ -24,6 +24,8 @@
     ./modules/random_background.nix
   ];
 
+  stylix.targets.hyprpaper.enable = false;
+
   programs.home-manager.enable = true;
   home.stateVersion = "25.11";
 }
