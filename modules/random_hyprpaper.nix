@@ -43,7 +43,6 @@
       Description = "Periodically change wallpaper via hyprpaper";
     };
     Timer = {
-      OnBootSec = "1min";
       OnUnitActiveSec = "15min"; # change interval here
       Persistent = true;
     };
