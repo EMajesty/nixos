@@ -24,6 +24,7 @@
     ./modules/ghostty.nix
     ./modules/random_hyprpaper.nix
     ./modules/fastfetch.nix
+    ./modules/cursor.nix
   ];
 
   stylix = {
