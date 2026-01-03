@@ -1,11 +1,16 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   programs.waybar = {
     enable = true;
     systemd.enable = true;
     systemd.target = "hyprland-session.target";
-    # style = ./waybar.css;
+    style = lib.mkForce ./waybar.css;
     settings = [
       {
         reload_style_on_change = true;
