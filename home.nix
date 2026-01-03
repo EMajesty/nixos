@@ -23,6 +23,7 @@
     ./modules/zen.nix
     ./modules/ghostty.nix
     ./modules/random_hyprpaper.nix
+    ./modules/fastfetch.nix
   ];
 
   stylix = {

@@ -73,10 +73,8 @@
     cmatrix
     efibootmgr
     eza
-    fastfetch
     freerdp
     gdb
-    # ghostty
     home-manager
     hyprpaper
     hyprpicker
