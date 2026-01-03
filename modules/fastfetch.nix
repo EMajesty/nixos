@@ -1,13 +1,15 @@
 { config, pkgs, ... }:
 {
-  enable = true;
-  settings = {
-    logo = {
-      source = "auto";
-    };
+  programs.fastfetch = {
+    enable = true;
+    settings = {
+      logo = {
+        source = "auto";
+      };
 
-    display = {
-      separator = " : ";
+      display = {
+        separator = " : ";
+      };
     };
   };
 }
