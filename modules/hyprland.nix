@@ -64,7 +64,8 @@
       };
 
       misc = {
-        windowrulev2 = "focusonactivate, class:.*";
+        windowrulev2 = [ "focusonactivate, class:.*" ];
+        # focus_on_activate = 1;
         force_default_wallpaper = 0;
         disable_hyprland_logo = true;
       };
