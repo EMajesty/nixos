@@ -26,7 +26,7 @@
         {
           type = "host";
           key = "  * Host";
-          format = "{vendor} {family} {name}";
+          format = "{name}";
         }
         {
           type = "os";
