@@ -67,6 +67,7 @@
 
   environment.systemPackages = with pkgs; [
     kdePackages.ark
+    brightnessctl
     btop
     cifs-utils
     clang
