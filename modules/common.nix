@@ -44,6 +44,8 @@
     extraGroups = [
       "networkmanager"
       "wheel"
+      "libvirtd"
+      "kvm"
     ];
     shell = pkgs.zsh;
   };
@@ -176,6 +178,8 @@
   # 	dates = "09:00";
   # 	randomizedDelaySec = "45min";
   # };
+
+  virtualisation.libvirtd.enable = true;
 
   nix.settings.experimental-features = [
     "nix-command"

@@ -5,6 +5,7 @@
 
   imports = [ ];
 
+  boot.kernelModules = [ "kvm-amd" ];
   boot.initrd.kernelModules = [ "amdgpu" ];
 
   environment.systemPackages = with pkgs; [
