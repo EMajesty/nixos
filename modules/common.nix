@@ -115,6 +115,7 @@
     enable = true;
     autoEnable = true;
     targets = {
+      hyprpaper.enable = false;
       # neovim.enable = false;
       # nvf.enable = false;
     };
