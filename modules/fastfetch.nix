@@ -6,7 +6,8 @@
       logo = {
         # source = "auto";
         type = "command-raw";
-        source = "pokeget random --hide-name";
+        # source = "pokeget random --hide-name";
+        source = "pokeget gengar --hide-name";
       };
 
       display = {
