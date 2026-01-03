@@ -4,7 +4,9 @@
     enable = true;
     settings = {
       logo = {
-        source = "auto";
+        # source = "auto";
+        type = "command-raw";
+        source = "pokeget random --hide-name";
       };
 
       display = {
