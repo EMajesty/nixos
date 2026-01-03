@@ -87,7 +87,7 @@
     ntfs3g
     p7zip
     pavucontrol
-    pokeget
+    pokeget-rs
     qbittorrent
     rapidraw
     samba
