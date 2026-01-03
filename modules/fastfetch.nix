@@ -24,6 +24,11 @@
           format = "{1} {2} {3}";
         }
         {
+          type = "host";
+          key = "  * Host";
+          format = "{vendor} {family} {name}";
+        }
+        {
           type = "os";
           key = "  󰣇 OS";
           format = "{2}";
