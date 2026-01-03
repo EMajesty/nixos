@@ -25,8 +25,11 @@
     ./modules/random_hyprpaper.nix
   ];
 
-  stylix.targets = {
-    hyprpaper.enable = lib.mkForce false;
+  stylix = {
+    image = "/home/emaj/Pictures/wallpapers/city.jpg";
+    targets = {
+      hyprpaper.enable = lib.mkForce false;
+    };
   };
 
   programs.home-manager.enable = true;
