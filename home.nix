@@ -28,7 +28,7 @@
 
   stylix = {
     targets = {
-      hyprpaper.enable = lib.mkForce false;
+      # hyprpaper.enable = lib.mkForce false;
     };
   };
 
