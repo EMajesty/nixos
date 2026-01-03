@@ -190,6 +190,11 @@
     };
   };
 
+  programs.steam = {
+    enable = true;
+    # gamescopeSession.enable = true;
+  };
+
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
