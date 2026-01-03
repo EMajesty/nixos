@@ -15,7 +15,7 @@
       monitor = ",preferred,auto,1";
 
       exec-once = [
-        hyprpaper
+        "hyprpaper"
         # "mullvad"
       ];
 
