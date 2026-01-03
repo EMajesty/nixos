@@ -18,14 +18,14 @@
           type = "custom";
           format = "┌──────────────────────────────────────────────────┐";
         }
-        {
-          type = "chassis";
-          key = "  󰇺 Chassis";
-          format = "{1} {2} {3}";
-        }
+        # {
+        #   type = "chassis";
+        #   key = "  󰇺 Chassis";
+        #   format = "{1} {2} {3}";
+        # }
         {
           type = "host";
-          key = "  * Host";
+          key = "  󰇺 Host";
           format = "{name}";
         }
         {
