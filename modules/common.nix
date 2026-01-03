@@ -123,7 +123,7 @@
     #   url = "https://i.redd.it/7oxaztid8wud1.png";
     #   hash = "sha256-OVmNYW4QzGnzIc7+H8Hdxso10LlRbzgnkfjxDa42VZs=";
     # };
-    image = "%h/Pictures/wallpapers/city.jpg";
+    image = "/home/emaj/Pictures/wallpapers/city.jpg";
     polarity = "dark";
   };
 
