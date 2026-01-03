@@ -81,6 +81,7 @@
     hyprpaper
     hyprpicker
     hyprshot
+    jq
     kicad
     mate.eom
     mgba
