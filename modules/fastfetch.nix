@@ -30,13 +30,13 @@
         }
         {
           type = "os";
-          key = "  󰣇 OS";
+          key = "   OS";
           format = "{2}";
           keyColor = "red";
         }
         {
           type = "kernel";
-          key = "   Kernel";
+          key = "   Kernel";
           format = "{2}";
           keyColor = "red";
         }
@@ -96,12 +96,12 @@
         }
         {
           type = "memory";
-          key = "   Memory ";
+          key = "   Memory ";
           keyColor = "magenta";
         }
         {
           type = "disk";
-          key = "  Disk ";
+          key = "   Disk ";
           keyColor = "magenta";
         }
         {
