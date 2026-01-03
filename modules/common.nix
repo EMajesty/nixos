@@ -74,6 +74,7 @@
     cmake
     cmatrix
     efibootmgr
+    evtest
     eza
     freerdp
     gdb
