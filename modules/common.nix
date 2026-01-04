@@ -100,6 +100,7 @@
     pokeget-rs
     qbittorrent
     rapidraw
+    remmina
     samba
     spice-gtk
     tmux
