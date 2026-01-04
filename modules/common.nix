@@ -38,6 +38,11 @@
   services.printing.enable = true;
   services.resolved.enable = true;
 
+  services.mullvad-vpn = {
+    enable = true;
+    package = pkgs.mullvad-vpn;
+  };
+
   time.timeZone = "Europe/Helsinki";
 
   users.users.emaj = {

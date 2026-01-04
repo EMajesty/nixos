@@ -11,8 +11,4 @@
   services.hypridle = {
     enable = true;
   };
-  programs.mullvad-vpn = {
-    enable = true;
-    package = pkgs.mullvad-vpn;
-  };
 }
