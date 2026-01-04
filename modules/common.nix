@@ -36,6 +36,7 @@
   networking.networkmanager.enable = true;
   services.openssh.enable = true;
   services.printing.enable = true;
+  services.resolved.enable = true;
 
   time.timeZone = "Europe/Helsinki";
 
