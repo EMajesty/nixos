@@ -129,7 +129,6 @@
     enable = true;
     autoEnable = true;
     targets = {
-      zen-browser.profileNames = [ "default" ];
     };
     base16Scheme = "${pkgs.base16-schemes}/share/themes/dracula.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/evergreen.yaml";
