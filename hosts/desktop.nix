@@ -10,6 +10,7 @@
 
   environment.systemPackages = with pkgs; [
     godot
+    kicad
     krita
   ];
 }
