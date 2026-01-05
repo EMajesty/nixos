@@ -29,6 +29,7 @@
 
   stylix = {
     targets = {
+        zen-browser.profiles = [ "default" ];
       # hyprpaper.enable = lib.mkForce false;
     };
   };
