@@ -13,6 +13,11 @@
   # home.packages = with pkgs; [
   # ];
 
+  xdg.userDirs = {
+    enable = true;
+    createDirectories = true;
+  };
+
   imports = [
     ./modules/git.nix
     ./modules/hyprland.nix
