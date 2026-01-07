@@ -4,12 +4,9 @@
   programs.hyprlock = {
     enable = true;
     settings = {
-      backgrounds = [
-        {
-          blur_size = 8;
-          blur_passes = 3;
-        }
-      ];
+      background = {
+        blur_passes = 3;
+      };
     };
   };
 
