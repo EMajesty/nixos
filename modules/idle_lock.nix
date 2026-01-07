@@ -17,6 +17,7 @@
         outline_thickness = 0;
         font_color = lib.mkForce "rgba(255,217,179,1.0)";
         fail_color = lib.mkForce "rgba(255,0,0,0.2)";
+        placeholder_text = "$TIME";
 
         rounding = 0;
         shadow_passes = 0;
