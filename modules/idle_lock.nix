@@ -1,4 +1,9 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   programs.hyprlock = {
@@ -8,7 +13,7 @@
         blur_passes = 3;
       };
       input-field = {
-        inner_color = "rgb(000000)";
+        inner_color = lib.mkForce "rgba(00000000)";
         rounding = 0;
         shadow_passes = 0;
         fade_on_empty = false;
