@@ -14,6 +14,10 @@
       };
       input-field = {
         inner_color = lib.mkForce "rgba(00000000)";
+        outline_thickness = 0;
+        font_color = "rgba(255,217,179,1.0)";
+        fail_color = "rgba(255,0,0,0.2)";
+
         rounding = 0;
         shadow_passes = 0;
         fade_on_empty = false;
