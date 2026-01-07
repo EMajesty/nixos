@@ -8,7 +8,7 @@
         blur_passes = 3;
       };
       input-field = {
-        inner_color = "rgba(0,0,0,0)";
+        inner_color = rgba (00000000);
         rounding = 0;
         shadow_passes = 0;
         fade_on_empty = false;
