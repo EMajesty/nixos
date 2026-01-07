@@ -13,7 +13,7 @@
         blur_passes = 3;
       };
       input-field = {
-        size = "6666, 100";
+        size = "6666, 6666";
         inner_color = lib.mkForce "rgba(00000000)";
         outline_thickness = 0;
         font_color = lib.mkForce "rgba(255,217,179,1.0)";
