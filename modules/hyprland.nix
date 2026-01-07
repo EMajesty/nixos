@@ -21,6 +21,7 @@
 
       exec-once = [
         "hyprpaper"
+        "hypridle"
         # "mullvad"
       ];
 
@@ -110,6 +111,7 @@
         "$mod CONTROL, S, exec, hyprshot -m region --clipboard-only"
         "$mod, P, exec, hyprpicker -a"
         # "$mod SHIFT, L, exec $home/.emaj/lock_screen.sh"
+        "$mod SHIFT, L, exec, pidof hyprlock || hyprlock"
         "$mod, H, movefocus, l"
         "$mod, L, movefocus, r"
         "$mod, K, movefocus, u"

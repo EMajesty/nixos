@@ -30,6 +30,7 @@
     ./modules/random_hyprpaper.nix
     ./modules/fastfetch.nix
     ./modules/cursor.nix
+    ./modules/idle_lock.nix
   ];
 
   stylix = {
