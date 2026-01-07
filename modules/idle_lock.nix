@@ -13,11 +13,11 @@
         blur_passes = 3;
       };
       input-field = {
-        size = "6666, 6666";
+        size = "6666, 100";
         inner_color = lib.mkForce "rgba(00000000)";
         outline_thickness = 0;
         font_color = lib.mkForce "rgba(255,217,179,1.0)";
-        fail_color = lib.mkForce "rgba(255,0,0,0.2)";
+        fail_color = lib.mkForce "rgba(FF0000FF)";
         placeholder_text = "$TIME";
 
         rounding = 0;
