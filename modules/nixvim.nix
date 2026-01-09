@@ -35,7 +35,6 @@
           html.enable = true;
           lua_ls.enable = true;
           nil_ls.enable = true;
-          pico8_ls.enable = true;
           pylsp.enable = true;
           ruby_lsp.enable = true;
           rust_analyzer.enable = true;
