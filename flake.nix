@@ -8,7 +8,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     stylix.url = "github:nix-community/stylix/release-25.11";
     nvf.url = "github:notashelf/nvf";
-nixvim.url = "github:nix-community/nixvim";
+    nixvim.url = "github:nix-community/nixvim";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     firefox-addons.url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
   };
@@ -21,7 +21,7 @@ nixvim.url = "github:nix-community/nixvim";
       home-manager,
       stylix,
       nvf,
-nixvim,
+      nixvim,
       zen-browser,
       ...
     }@inputs:
@@ -37,7 +37,8 @@ nixvim,
           home-manager.users.emaj = {
             imports = [
               ./home.nix
-              nixvim.homeManagerModules.default
+              nixvim.homeModules.default
+              # nvf.homeManagerModules.default
             ];
           };
           home-manager.extraSpecialArgs = {
