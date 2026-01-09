@@ -9,7 +9,7 @@
     # colorschemes.dracula.enable = true;
 
     plugins = {
-      transparent.enable = true;
+      # transparent.enable = true;
       indent-blankline.enable = true;
       gitsigns.enable = true;
       lualine.enable = true;
@@ -76,7 +76,10 @@
       colorcolumn = "120";
     };
 
-    globals.mapleader = " ";
+    globals = {
+      mapleader = " ";
+      transparent_enabled = true;
+    };
 
     keymaps = [
       {
