@@ -6,7 +6,7 @@
     viAlias = true;
     vimAlias = true;
 
-    # colorschemes.dracula.enable = true;
+    colorschemes.dracula.enable = true;
 
     plugins = {
       # transparent.enable = true;
