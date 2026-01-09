@@ -96,13 +96,13 @@
           key = "   Disk ";
           # keyColor = "magenta";
         }
-        # {
-        #   type = "disk";
-        #   key = "  󱦟 OS Age ";
-        #   folders = "/";
-        #   # keyColor = "red";
-        #   format = "{days} days";
-        # }
+        {
+          type = "disk";
+          key = "  󱦟 OS Age ";
+          folders = "/";
+          # keyColor = "red";
+          format = "{days} days";
+        }
         {
           type = "uptime";
           key = "  󱫐 Uptime ";
