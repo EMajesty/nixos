@@ -21,6 +21,7 @@ nixvim.url = "github:nix-community/nixvim";
       home-manager,
       stylix,
       nvf,
+nixvim,
       zen-browser,
       ...
     }@inputs:
