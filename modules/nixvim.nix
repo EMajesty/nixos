@@ -90,7 +90,7 @@
       {
         key = "<leader>x";
         mode = "n";
-        silent = true;
+       # silent = true;
         action = "<cmd>!chmod +x %<CR>";
       }
     ];
