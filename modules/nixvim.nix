@@ -22,7 +22,7 @@
     plugins.lualine.enable = true;
 
     # Telescope
-    plugins.telescope.enable = true;
+    # plugins.telescope.enable = true;
 
     # Completion + snippets
     plugins.nvim-cmp = {
