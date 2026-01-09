@@ -75,6 +75,7 @@
     kdePackages.ark
     brightnessctl
     btop
+    cargo
     cifs-utils
     clang
     clang-tools
@@ -101,6 +102,7 @@
     rapidraw
     remmina
     ripgrep
+    rustc
     samba
     spice-gtk
     tmux
