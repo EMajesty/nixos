@@ -22,7 +22,7 @@
         };
 
         git.enable = true;
-        treesitter.enable = true;
+        # treesitter.enable = true;
 
         statusline.lualine.enable = true;
         telescope.enable = true;
