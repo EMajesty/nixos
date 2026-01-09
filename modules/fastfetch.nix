@@ -38,35 +38,35 @@
           type = "os";
           key = "   OS";
           format = "{2}";
-          keyColor = "red";
+          # keyColor = "red";
         }
         {
           type = "kernel";
           key = "   Kernel";
           format = "{2}";
-          keyColor = "red";
+          # keyColor = "red";
         }
         {
           type = "packages";
           key = "  󰏗 Packages";
-          keyColor = "green";
+          # keyColor = "green";
         }
         {
           type = "display";
           key = "  󰍹 Display";
           format = "{1}x{2} @ {3}Hz [{7}]";
-          keyColor = "green";
+          # keyColor = "green";
         }
         {
           type = "terminal";
           key = "   Terminal";
-          keyColor = "yellow";
+          # keyColor = "yellow";
         }
         {
           type = "wm";
           key = "  󱗃 WM";
           format = "{2}";
-          keyColor = "yellow";
+          # keyColor = "yellow";
         }
         {
           type = "custom";
@@ -81,41 +81,41 @@
           type = "cpu";
           format = "{1} @ {7}";
           key = "   CPU";
-          keyColor = "blue";
+          # keyColor = "blue";
         }
         {
           type = "gpu";
           format = "{1} {2}";
           key = "  󰊴 GPU";
-          keyColor = "blue";
+          # keyColor = "blue";
         }
         {
           type = "gpu";
           format = "{3}";
           key = "   GPU Driver";
-          keyColor = "magenta";
+          # keyColor = "magenta";
         }
         {
           type = "memory";
           key = "   Memory ";
-          keyColor = "magenta";
+          # keyColor = "magenta";
         }
         {
           type = "disk";
           key = "   Disk ";
-          keyColor = "magenta";
+          # keyColor = "magenta";
         }
         {
           type = "disk";
           key = "  󱦟 OS Age ";
           folders = "/";
-          keyColor = "red";
+          # keyColor = "red";
           format = "{days} days";
         }
         {
           type = "uptime";
           key = "  󱫐 Uptime ";
-          keyColor = "red";
+          # keyColor = "red";
         }
         {
           type = "custom";
