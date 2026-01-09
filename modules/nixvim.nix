@@ -78,7 +78,7 @@
 
     globals = {
       mapleader = " ";
-      transparent_enabled = true;
+      # transparent_enabled = true;
     };
 
     keymaps = [
