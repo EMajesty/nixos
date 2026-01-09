@@ -22,7 +22,12 @@ plugins = {
       snippet.luasnip.enable = true;
     };
     which-key.enable = true;
-    lsp.enable = true;
+    lsp= {
+        enable = true;
+        servers = {
+            nixd.enable = true;
+        };
+    };
     lsp-format.enable = true;
 # lsp = {
 #       enable = true;
