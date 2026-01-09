@@ -90,7 +90,6 @@
     hyprpicker
     hyprshot
     jq
-    #    kicad
     mate.eom
     mgba
     nautilus
