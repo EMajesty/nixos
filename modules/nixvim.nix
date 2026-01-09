@@ -13,6 +13,7 @@ plugins = {
     gitsigns.enable = true;
     lualine.enable = true;
     telescope.enable = true;
+    web-devicons.enable = true;
     
 
     nvim-cmp = {
@@ -20,30 +21,30 @@ plugins = {
       snippet.luasnip.enable = true;
     };
     which-key.enable = true;
-lsp = {
-      enable = true;
-      # This will format on save for servers that support it.
-      onAttach = ''
-        vim.api.nvim_create_autocmd("BufWritePre", {
-          callback = function(args)
-            vim.lsp.buf.format({ bufnr = args.buf })
-          end,
-        })
-      '';
-      # servers = {
-      #   nixd.enable = true;
-      #   nixd.settings = {
-      #     nil = {
-      #       nix = {
-      #         autoArchive = true;
-      #       };
-      #     };
-      #   };
-      # };
-    };
-
-    # Language support (enable Treesitter + LSP per language as needed)
-    treesitter.enable = true;
+# lsp = {
+#       enable = true;
+#       # This will format on save for servers that support it.
+#       onAttach = ''
+#         vim.api.nvim_create_autocmd("BufWritePre", {
+#           callback = function(args)
+#             vim.lsp.buf.format({ bufnr = args.buf })
+#           end,
+#         })
+#       '';
+#       # servers = {
+#       #   nixd.enable = true;
+#       #   nixd.settings = {
+#       #     nil = {
+#       #       nix = {
+#       #         autoArchive = true;
+#       #       };
+#       #     };
+#       #   };
+#       # };
+#     };
+#
+#     # Language support (enable Treesitter + LSP per language as needed)
+#     treesitter.enable = true;
 
 };
 
@@ -111,9 +112,6 @@ lsp = {
     ];
 
 
-        # NixVim has a big language module set; this reflects your nvf.languages
-    # at roughly the same level of abstraction.
-    # If you prefer, use only treesitter & lsp servers above instead.
     extraConfigLua = ''
       -- Example: you can fine-tune per-language here if needed
     '';
