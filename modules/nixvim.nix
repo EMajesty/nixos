@@ -38,7 +38,6 @@
           pylsp.enable = true;
           ruby_lsp.enable = true;
           rust_analyzer.enable = true;
-          sqlls.enable = true;
           ts_ls.enable = true;
         };
       };
