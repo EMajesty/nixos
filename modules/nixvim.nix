@@ -69,7 +69,7 @@
       wrap = false;
       hlsearch = false;
       incsearch = true;
-      # termguicolors = true;
+      termguicolors = true;
       scrolloff = 8;
       signcolumn = "yes";
       updatetime = 50;
