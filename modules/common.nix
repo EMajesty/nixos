@@ -129,7 +129,7 @@
     autoEnable = true;
     targets = {
     };
-    base24Scheme = "${pkgs.base24-schemes}/share/themes/zenburn.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/zenburn.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/dracula.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/evergreen.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/penumbra-dark.yaml";
