@@ -8,15 +8,45 @@
 
     # colorschemes.dracula.enable = true;
 
-    plugins.indent-blankline.enable = true;
-    plugins.gitsigns.enable = true;
-    plugins.lualine.enable = true;
-    plugins.telescope.enable = true;
+plugins = {
+    indent-blankline.enable = true;
+    gitsigns.enable = true;
+    lualine.enable = true;
+    telescope.enable = true;
+    
 
-    plugins.nvim-cmp = {
+    nvim-cmp = {
       enable = true;
       snippet.luasnip.enable = true;
     };
+    which-key.enable = true;
+lsp = {
+      enable = true;
+      # This will format on save for servers that support it.
+      onAttach = ''
+        vim.api.nvim_create_autocmd("BufWritePre", {
+          callback = function(args)
+            vim.lsp.buf.format({ bufnr = args.buf })
+          end,
+        })
+      '';
+      # servers = {
+      #   nixd.enable = true;
+      #   nixd.settings = {
+      #     nil = {
+      #       nix = {
+      #         autoArchive = true;
+      #       };
+      #     };
+      #   };
+      # };
+    };
+
+    # Language support (enable Treesitter + LSP per language as needed)
+    treesitter.enable = true;
+
+};
+
 
     # Core options (vim.options -> opts)
     opts = {
@@ -80,35 +110,8 @@
       }
     ];
 
-    plugins.which-key.enable = true;
 
-    # LSP (rough equivalent of nvf's simplified LSP section)
-    plugins.lsp = {
-      enable = true;
-      # This will format on save for servers that support it.
-      onAttach = ''
-        vim.api.nvim_create_autocmd("BufWritePre", {
-          callback = function(args)
-            vim.lsp.buf.format({ bufnr = args.buf })
-          end,
-        })
-      '';
-      # servers = {
-      #   nixd.enable = true;
-      #   nixd.settings = {
-      #     nil = {
-      #       nix = {
-      #         autoArchive = true;
-      #       };
-      #     };
-      #   };
-      # };
-    };
-
-    # Language support (enable Treesitter + LSP per language as needed)
-    plugins.treesitter.enable = true;
-
-    # NixVim has a big language module set; this reflects your nvf.languages
+        # NixVim has a big language module set; this reflects your nvf.languages
     # at roughly the same level of abstraction.
     # If you prefer, use only treesitter & lsp servers above instead.
     extraConfigLua = ''
