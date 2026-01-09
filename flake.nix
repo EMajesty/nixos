@@ -36,7 +36,7 @@ nixvim.url = "github:nix-community/nixvim";
           home-manager.users.emaj = {
             imports = [
               ./home.nix
-              nvf.homeManagerModules.default
+              nixvim.homeManagerModules.default
             ];
           };
           home-manager.extraSpecialArgs = {
