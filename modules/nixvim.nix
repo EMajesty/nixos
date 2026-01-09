@@ -25,7 +25,23 @@
       lsp = {
         enable = true;
         servers = {
+          arduino_language_server.enable = true;
+          asm_lsp.enable = true;
+          bashls.enable = true;
+          clangd.enable = true;
+          cmake.enable = true;
+          gdscript.enable = true;
+          glsl_analyzer.enable = true;
+          gopls.enable = true;
+          html.enable = true;
+          lua_ls.enable = true;
           nil_ls.enable = true;
+          pico8_ls.enable = true;
+          pylsp.enable = true;
+          ruby_lsp.enable = true;
+          rust_analyzer.enable = true;
+          sqlls.enable = true;
+          ts_ls.enable = true;
         };
       };
 
