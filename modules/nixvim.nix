@@ -30,7 +30,6 @@
           bashls.enable = true;
           clangd.enable = true;
           cmake.enable = true;
-          gdscript.enable = true;
           glsl_analyzer.enable = true;
           gopls.enable = true;
           html.enable = true;
