@@ -131,7 +131,6 @@
     enable = true;
     autoEnable = true;
     targets = {
-      nixvim.enable = false;
       # nixvim = {
       #     enable = true;
       #     plugin = "base16-nvim";

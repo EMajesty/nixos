@@ -6,9 +6,6 @@
     viAlias = true;
     vimAlias = true;
 
-    # colorschemes.dracula.enable = true;
-    colorschemes.nord.enable = true;
-
     plugins = {
       # transparent.enable = true;
       indent-blankline.enable = true;
