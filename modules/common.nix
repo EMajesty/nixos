@@ -129,13 +129,13 @@
     enable = true;
     autoEnable = true;
     targets = {
-        nixvim = {
-            enable = true;
-            plugin = "base16-nvim";
-            colors.enable = true;
-            opacity.enable = true;
-            transparentBackground.main = true;
-        };
+        # nixvim = {
+        #     enable = true;
+        #     plugin = "base16-nvim";
+        #     colors.enable = true;
+        #     opacity.enable = true;
+        #     transparentBackground.main = true;
+        # };
     };
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
     base16Scheme = "${pkgs.base16-schemes}/share/themes/dracula.yaml";
