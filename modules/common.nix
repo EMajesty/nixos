@@ -100,6 +100,7 @@
     qbittorrent
     rapidraw
     remmina
+    ripgrep
     samba
     spice-gtk
     tmux
@@ -129,9 +130,9 @@
     autoEnable = true;
     targets = {
     };
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
+    # base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/dracula.yaml";
-    # base16Scheme = "${pkgs.base16-schemes}/share/themes/evergreen.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/evergreen.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/penumbra-dark.yaml";
     image = pkgs.fetchurl {
       url = "https://i.redd.it/7oxaztid8wud1.png";
