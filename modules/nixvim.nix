@@ -21,6 +21,7 @@ plugins = {
       snippet.luasnip.enable = true;
     };
     which-key.enable = true;
+    lsp.enable = true;
 # lsp = {
 #       enable = true;
 #       # This will format on save for servers that support it.
