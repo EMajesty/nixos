@@ -9,6 +9,7 @@
     # colorschemes.dracula.enable = true;
 
     plugins = {
+      transparent.enable = true;
       indent-blankline.enable = true;
       gitsigns.enable = true;
       lualine.enable = true;
