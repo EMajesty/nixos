@@ -9,40 +9,39 @@
     # colorschemes.dracula.enable = true;
 
     plugins = {
-        indent-blankline.enable = true;
-        gitsigns.enable = true;
-        lualine.enable = true;
-        telescope.enable = true;
-        web-devicons.enable = true;
-        treesitter.enable = true;
-        which-key.enable = true;
+      indent-blankline.enable = true;
+      gitsigns.enable = true;
+      lualine.enable = true;
+      telescope.enable = true;
+      web-devicons.enable = true;
+      treesitter.enable = true;
+      which-key.enable = true;
 
-        nvim-cmp = {
-          enable = true;
-          snippet.luasnip.enable = true;
+      nvim-cmp = {
+        enable = true;
+        snippet.luasnip.enable = true;
+      };
+
+      lsp = {
+        enable = true;
+        servers = {
+          nil_ls.enable = true;
         };
+      };
 
-        lsp= {
-            enable = true;
-            servers = {
-                nil_ls.enable = true;
-            };
-        };
-
-
-
-        lsp-format.enable = true;
+      lsp-format.enable = true;
     };
 
-        extraConfigLua = ''
-            local augroup = vim.api.nvim_create_augroup("FormatOnSave", {})
-            vim.api.nvim_create_autocmd("BufWritePre", {
-                group = augroup,
-                callback = function(args)
-                vim.lsp.buf.format({ bufnr = args.buf })
-                end,
-            })
-            '';
+    extraConfigLua = ''
+      local augroup = vim.api.nvim_create_augroup("FormatOnSave", {})
+      vim.api.nvim_create_autocmd("BufWritePre", {
+          group = augroup,
+          callback = function(args)
+          vim.lsp.buf.format({ bufnr = args.buf })
+          end,
+      })
+    '';
+
     opts = {
       number = true;
       relativenumber = true;
@@ -90,11 +89,10 @@
       {
         key = "<leader>x";
         mode = "n";
-       # silent = true;
+        # silent = true;
         action = "<cmd>!chmod +x %<CR>";
       }
     ];
-
 
     # extraConfigLua = ''
     #   -- Example: you can fine-tune per-language here if needed
