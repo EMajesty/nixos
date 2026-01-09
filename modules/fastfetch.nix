@@ -69,15 +69,6 @@
           # keyColor = "yellow";
         }
         {
-          type = "custom";
-          format = "└─────────────────────────────────────────────────────────┘";
-        }
-        # break
-        {
-          type = "custom";
-          format = "┌─────────────────────────────────────────────────────────┐";
-        }
-        {
           type = "cpu";
           format = "{1} @ {7}";
           key = "   CPU";
@@ -105,13 +96,13 @@
           key = "   Disk ";
           # keyColor = "magenta";
         }
-        {
-          type = "disk";
-          key = "  󱦟 OS Age ";
-          folders = "/";
-          # keyColor = "red";
-          format = "{days} days";
-        }
+        # {
+        #   type = "disk";
+        #   key = "  󱦟 OS Age ";
+        #   folders = "/";
+        #   # keyColor = "red";
+        #   format = "{days} days";
+        # }
         {
           type = "uptime";
           key = "  󱫐 Uptime ";
