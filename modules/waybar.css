@@ -3,7 +3,7 @@
     background-color: transparent;
     /* color: @foreground; */
     /* color: #ffd9b3; */
-    color: #ffd9b3;
+    /* color: #ffd9b3; */
 
     border: none;
     border-radius: 0;
@@ -46,18 +46,18 @@
     margin: 0 7.5px;
 }
 
-#custom-expand-icon {
-    /* margin-right: 7px; */
-    color: #fa6161;
-}
+/* #custom-expand-icon { */
+/* margin-right: 7px; */
+/* color: #fa6161; */
+/* } */
 
 tooltip {
     padding: 2px;
 }
 
-#clock {
-    color: #fa6161;
-}
+/* #clock { */
+/* color: #fa6161; */
+/* } */
 
 .hidden {
     opacity: 0;
