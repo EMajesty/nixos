@@ -131,6 +131,7 @@
     targets = {
         nixvim = {
             enable = true;
+            plugin = "base16-nvim";
         };
     };
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
