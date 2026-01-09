@@ -24,7 +24,7 @@
     ./modules/waybar.nix
     ./modules/zsh.nix
     ./modules/misc.nix
-    ./modules/nvf-configuration.nix
+    # ./modules/nvf-configuration.nix
     ./modules/zen.nix
     ./modules/ghostty.nix
     ./modules/random_hyprpaper.nix
