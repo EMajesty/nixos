@@ -13,7 +13,7 @@
 
         theme = {
           enable = true;
-          name = "dracula";
+          name = lib.mkForce "dracula";
           style = "";
         };
 
