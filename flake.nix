@@ -38,7 +38,7 @@
             imports = [
               ./home.nix
               nixvim.homeModules.default
-              # nvf.homeManagerModules.default
+              nvf.homeManagerModules.default
             ];
           };
           home-manager.extraSpecialArgs = {
