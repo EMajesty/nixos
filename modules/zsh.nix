@@ -16,7 +16,7 @@
   };
   programs.oh-my-posh = {
     enable = true;
-    useTheme = "atomic";
+    useTheme = "dracula";
     enableZshIntegration = true;
   };
 }
