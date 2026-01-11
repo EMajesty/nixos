@@ -3,10 +3,7 @@
 {
   wayland.windowManager.hyprland = {
     enable = true;
-    xwayland = {
-      enable = true;
-      hidpi = true;
-    };
+    xwayland.enable = true;
 
     settings = {
       "$terminal" = "ghostty";
