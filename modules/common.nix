@@ -30,15 +30,17 @@
   services.xserver = {
     enable = true;
 
-    xkb.extraLayouts.us_nords = {
-      description = "";
-      languages = [ "eng" ];
-      symbolsFile = ./xkb/symbols/us_nords;
-    };
-    xkb.options = "ctrl:nocaps";
+    xkb = {
+      extraLayouts.us_nords = {
+        description = "";
+        languages = [ "eng" ];
+        symbolsFile = ./xkb/symbols/us_nords;
+      };
+      options = "ctrl:nocaps";
 
-    layout = "us_nords";
-    xkbVariant = "basic";
+      layout = "us_nords";
+      variant = "basic";
+    };
   };
 
   hardware.bluetooth = {
