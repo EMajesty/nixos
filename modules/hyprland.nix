@@ -76,10 +76,13 @@
       };
 
       input = {
-        # kb_layout = "us_nords";
+        kb_layout = "us_nords";
         kb_variant = "";
         kb_model = "";
-        kb_options = "fkeys:basic_13-24";
+        kb_options = [
+          "fkeys:basic_13-24"
+          "ctrl:nocaps"
+        ];
         kb_rules = "";
         # sensitivity = 1.0;
 

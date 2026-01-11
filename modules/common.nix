@@ -27,6 +27,20 @@
     };
   };
 
+  services.xserver = {
+    enable = true;
+
+    xkb.extraLayouts.us_nords = {
+      description = "";
+      languages = [ "eng" ];
+      symbolsFile = ./xkb/symbols/us_nords;
+    };
+    xkb.options = "ctrl:nocaps";
+
+    layout = "us_nords";
+    xkbVariant = "basic";
+  };
+
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = true;
