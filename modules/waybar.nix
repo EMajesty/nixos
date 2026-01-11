@@ -23,6 +23,7 @@
         modules-right = [
           "mpd"
           "group/tray-expander"
+          "battery"
           "bluetooth"
           "network"
           "pulseaudio"
