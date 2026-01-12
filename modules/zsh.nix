@@ -14,16 +14,6 @@
       lt = "eza --tree --level=2 --long --icons --git";
       lta = "lt -a";
     };
-
-    completionInit = ''
-      autoload -Uz compinit
-      compinit
-    '';
-    initContent = ''
-      zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
-      zstyle ':completion:*' menu select
-    '';
-
   };
   programs.oh-my-posh = {
     enable = true;
