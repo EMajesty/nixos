@@ -59,6 +59,9 @@
     package = pkgs.mullvad-vpn;
   };
 
+  services.gvfs.enable = true;
+  services.udisks2.enable = true;
+
   time.timeZone = "Europe/Helsinki";
 
   users.users.emaj = {
@@ -123,6 +126,9 @@
     spice-gtk
     tmux
     unzip
+    usbutils
+    udiskie
+    udisks
     # ventoy
     vial
     virt-manager
