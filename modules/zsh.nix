@@ -6,6 +6,7 @@
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
+
     shellAliases = {
       gs = "git status";
       ls = "eza -lh --group-directories-first --icons=auto";
@@ -13,6 +14,16 @@
       lt = "eza --tree --level=2 --long --icons --git";
       lta = "lt -a";
     };
+
+    completionInit = ''
+      autoload -Uz compinit
+      compinit
+    '';
+    initExtra = ''
+      zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+      zstyle ':completion:*' menu select
+    '';
+
   };
   programs.oh-my-posh = {
     enable = true;
