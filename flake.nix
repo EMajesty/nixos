@@ -32,7 +32,6 @@
       commonModules = [
         ./modules/common.nix
         agenix.nixosModules.default
-        agenix.homeManagerModules.default
         stylix.nixosModules.stylix
         home-manager.nixosModules.home-manager
         {
@@ -43,6 +42,7 @@
               ./home.nix
               # nixvim.homeModules.default
               nvf.homeManagerModules.default
+              agenix.homeManagerModules.default
             ];
           };
           home-manager.extraSpecialArgs = {
