@@ -11,6 +11,7 @@
     # nixvim.url = "github:nix-community/nixvim";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     firefox-addons.url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+    agenix.url = "github:ryantm/agenix";
   };
 
   outputs =
@@ -23,12 +24,15 @@
       nvf,
       # nixvim,
       zen-browser,
+      agenix,
       ...
     }@inputs:
     let
       system = "x86_64-linux";
       commonModules = [
         ./modules/common.nix
+        agenix.nixosModules.default
+        agenix.homeManagerModules.default
         stylix.nixosModules.stylix
         home-manager.nixosModules.home-manager
         {
