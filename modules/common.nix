@@ -100,6 +100,7 @@
     clang-tools
     cmake
     cmatrix
+    discord
     efibootmgr
     evtest
     eza
@@ -135,7 +136,7 @@
     virt-manager
     virt-viewer
     vlc
-    vesktop
+    # vesktop
     wofi
     xfce.tumbler
     xdg-desktop-portal-hyprland
