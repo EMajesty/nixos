@@ -1,9 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  services.dunst = {
-    enable = true;
-  };
   services.udiskie = {
     enable = true;
     automount = true;

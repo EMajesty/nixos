@@ -124,6 +124,7 @@
     rustc
     samba
     spice-gtk
+    swaynotificationcenter
     tmux
     unzip
     usbutils
